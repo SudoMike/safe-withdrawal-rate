@@ -1,0 +1,14 @@
+#!/bin/bash
+set -e
+
+mydir=$(dirname $0)
+venv_dir=~/.envs/safe-withdrawal-rate
+
+if [ ! -e $venv_dir ]; then
+	virtualenv -p /usr/bin/python3 $venv_dir
+fi
+
+# Install requirements.
+$venv_dir/bin/pip install -r $mydir/requirements.txt
+
+

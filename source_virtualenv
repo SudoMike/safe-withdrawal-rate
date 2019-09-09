@@ -1,0 +1,2 @@
+# You can source this script to source the virtualenv for its project.
+source ~/.envs/safe-withdrawal-rate/bin/activate
